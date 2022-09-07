@@ -1,0 +1,585 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* Global styles */
+html{
+    font-size: 125%;
+}
+
+/* remove the default styling from the list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* add wrapper styles */
+.wrapper {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: hsla(227, 78%, 35%, 0.814);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', sans-serif; 
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 30px;
+}
+
+p {
+    font-family: 'roboto', sans-serif;
+}
+
+/* ******* */
+/* header  */
+/* ******* */
+
+/* hamburger menu */
+
+.hamburger {
+    display: none;
+    /* cursor: pointer; */
+}
+
+.bar {
+    display: block;
+    width: 40px;
+    height: 3px;
+    margin: 7px auto; 
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background-color: white;
+}
+
+header {
+    height: 100vh;
+    padding: 0px 0;
+    background: url(../one-magazine/one-magazine-assets/image-1.jpg) center;
+    background-size: cover;
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+h1 {
+    width: 90%;
+    line-height: 0.7;
+    margin: 160px auto;
+    text-align: center;
+     font-size: 5rem;     
+    }
+    
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'roboto', sans-serif;    
+    color: #fcfcfc;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 25px 15px 10px 15px;
+}
+
+.logo {
+    font-size: 55px;
+    padding: 0;
+    margin: 10px;
+    font-style: italic;
+}
+
+span {
+    font-style: italic;
+    font-size: 7.5rem;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* ************ */
+/*  main  */
+/* ************ */
+
+
+/* ************ */
+/* news section */
+/* ************ */
+
+.news {
+    direction: row;
+    margin: 70px auto;
+}
+
+.news ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news li {
+    flex-basis: 31%;        
+}
+
+.news img{
+    max-width: 100%;
+    display: block;
+    height: auto;       
+}
+
+h2 {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;   
+    font-family: 'Cormorant Garamond', sans-serif; 
+    font-size: 49px;
+}
+
+.highlights  .wrapper {
+    display: flex;
+}
+
+.highlightImage {
+    flex-basis: 30%;
+    /* border: 2px red solid; */
+}
+
+.thisWeek {
+    flex-basis: 70%;
+    /* border: 2px red solid; */
+}
+
+    
+.highlights {
+    margin: 90px auto;
+}
+
+.highlights img{
+    max-width: 100%;
+    display: block;   
+} 
+
+.thisWeek {
+    margin: 0 0 0 40px ;
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+}
+
+.thisWeek h2 {
+    margin-top: -10px;
+    padding: 0;
+    text-align: left;
+}
+
+
+
+/* upper part of section trends & scenes */
+
+
+.trendsScenes li:first-child {
+    display: flex;
+}
+
+.bgr-image01 {
+    background-image: url(../one-magazine/one-magazine-assets/image-5.jpg);
+    width: 130%;
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.trends {
+    margin-left: 10%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trends h2 {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 10px; 
+    font-size: 45px;   
+}
+
+
+.trends button {
+    align-self: flex-start;
+}
+
+/* lower part of section trends & scenes */
+
+.trendsScenes li:last-child {
+    display: flex;
+}
+
+.bgr-image02 {
+    background-image: url(../one-magazine/one-magazine-assets/image-2.jpg);
+    width: 130%;
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scenes {
+    margin-right: 7%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scenes h2 {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 10px;     
+    font-size: 40px;
+}
+
+.scenes button {
+    align-self: flex-start;
+}
+
+.social {
+    background-image: url(../one-magazine/one-magazine-assets/image-8.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.social .wrapper{
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 45vh;
+    display: grid;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;
+    align-self: center;  
+}
+
+
+.social img { 
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+.social h3 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', sans-serif;
+    margin: 0;
+}
+
+
+/* ***************** */
+/* subscribe section */
+/* ***************** */
+
+.subscribe{
+    background-color: #e3e3ee;
+}
+
+.subscribe .wrapper {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+form {
+    flex-direction: column; 
+}
+
+.update {
+    flex-basis: 40%;
+}
+
+input {
+    padding: 10px 150px 10px 40px;
+    margin: 0;
+    align-self: center;
+}
+
+legend, 
+.address li:first-child {
+    font-family: 'Cormorant Garamond', sans-serif; 
+    /* font-size: 23px; */
+    font-size: 1.25rem;
+    text-transform: uppercase;    
+}
+
+form button {
+    color: white;
+    background-color: black;
+    margin: 0;
+    align-self: center;
+}
+
+label,
+.address li {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;   
+    padding: 3px; 
+}
+
+.contact li {
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;  
+    font-weight: bold;  
+    text-align: right;
+    padding: 3px 0;
+}
+
+  /* ****** */
+  /* footer */
+  /* ****** */
+
+  footer {
+    background-color: #acacac;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+
+
+
+  /* ************* */
+  /* mobile devide */
+  /* ************* */
+
+  @media (max-width: 768px) {
+    html {
+        font-size: 1.5rem;
+    }
+
+    header {
+      height: 100vh;
+      position: relative;
+    }
+
+    button, 
+    .thisWeek button {
+        margin: 0 auto;
+    }
+    
+    .logo, 
+    .navbar ul a {
+        display: none;     
+    }
+    
+    .hamburger {
+        display: block;
+        margin: 10px auto;
+        position: absolute;
+        top: 0;
+        right: 25px;   
+    }
+    
+   
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 350px ;
+
+    }
+
+    span {
+        font-size: 5.5rem;
+    }
+
+    .news {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .news li:last-child {
+        display: none;
+    }
+
+    .news li {
+    flex-basis: 47%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .thisWeek {
+        margin: 50px 0 0 40px ;
+    }
+
+    .trendsScenes li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px 0px ;
+    }
+
+    .bgr-image01 {
+        order: 1;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bgr-image02 {
+        /* order: 1; */
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .trends {
+        width: 100%;
+        margin: 0 20px 0 0 ;
+        padding: 20px 40px;
+        order: 2;
+        /* border: 2px blue solid; */
+    }
+    
+    .scenes {
+        padding: 0px 60px 0;
+   
+    }
+
+.social {
+    background-image: url(../one-magazine/one-magazine-assets/image-9.jpg);
+}
+
+    .social ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social li{
+        margin: 10px;
+    }
+    
+    .social :nth-child(3) {
+        order: 1;
+    }
+ 
+    .social :nth-child(2) {
+        order: 2;
+    }
+    
+    .social :nth-child(1) {
+        order: 3;
+    }
+    
+    .subscribe {
+        height: 65vh;
+        justify-content: center;
+        font-size: 1rem;
+        background-color: #e3e3e3;
+    }
+
+    .subscribe .update{
+        display: flex;
+        flex-basis: 100%;
+        margin-top: 30px;
+         /* border: 2px red solid; */
+    }
+    
+    .subscribe .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 10px ;
+        /* border: 2px blue solid; */
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;        
+    }
+    
+    input, 
+    .subscribe button  {
+        width: 100%;        
+        /* border: 2px yellow solid; */
+    }
+    
+    input, 
+    .subscribe button,   
+    label {
+        font-size: 1rem;
+        margin: 5px;    
+        /* border: 2px yellow solid; */
+    }
+    
+    input {
+        text-align: center;
+    }
+    
+    .address, 
+    .contact {
+        /* font-size: 1rem; */
+        margin-top: 30px;
+        /* margin-bottom: 20px; */
+    }
+
+        legend, 
+    .address li:first-child {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .contact li, 
+    .address li {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+
+}
